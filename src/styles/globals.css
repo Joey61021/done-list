@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(9, 13, 16);
+    font-family: "Poppins", Inter, sans-serif;
+}
+
+:root {
+    /* page */
+    --container: 1360px;
+    --header-height: 80px;
+
+    /* colors */
+
+    /* generic */
+    --red: #c86464;
+    --green: #96b478;
+    --primary: #90cef4;
+    --yellow: #c8b464;
+    --gray: #afafaf;
+
+    /* page */
+    --text: #ffffff;
+    --card: #090D10;
+    --border: #303B41;
+    --hover: #202427;
+    --light: #34383b;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
